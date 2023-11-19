@@ -1,0 +1,28 @@
+proxy-providers: {}
+proxy-groups: []
+rules: []
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
+dns:
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 9.9.9.9
+    - system
+  nameserver:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
+    - https://dns.quad9.net/dns-query
+log-level: warning
+mode: global
+proxies:
+  - ip: 10.6.0.2
+    keepalive: 25
+    name: Vdsina
+    port: 51820
+    preshared-key: EjvLMpTSmiwsPvZRlh6IM2I39+sT7NQQ4CY4XZRyVSA=
+    private-key: KL6Lh8QggF8G5ZtODtGhDTf/vq2yXZUk+Uez+YhE2VI=
+    public-key: HPJkoB+w6CvCbBEE3FNUWLsql0Oe9k2ALl3MA4wUKDQ=
+    server: 77.246.100.70
+    type: wireguard
