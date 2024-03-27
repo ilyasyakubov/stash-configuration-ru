@@ -17,12 +17,12 @@ dns:
 log-level: warning
 mode: global
 proxies:
-  - ip: 10.6.0.2
+  - ip: 10.66.66.11
     keepalive: 25
     name: Vdsina
-    port: 51820
-    preshared-key: EjvLMpTSmiwsPvZRlh6IM2I39+sT7NQQ4CY4XZRyVSA=
-    private-key: KL6Lh8QggF8G5ZtODtGhDTf/vq2yXZUk+Uez+YhE2VI=
-    public-key: HPJkoB+w6CvCbBEE3FNUWLsql0Oe9k2ALl3MA4wUKDQ=
-    server: 77.246.100.70
+    port: 61590
+    preshared-key: 2NvEjCzYxlk7tl9Pj32w191+rx42lHXlUnIdIGd/+ZE=
+    private-key: AMsSPV7QtrjOo4dDq2W/as/WI93TJMJxv/qtG3ZS1mw=
+    public-key: k0ComhrLnDEcly4g7aSetyo+PBNRxVCK6dwMMYdFUAA=
+    server: 77.238.246.167
     type: wireguard
